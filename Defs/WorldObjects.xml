@@ -1,0 +1,28 @@
+<Defs>
+
+  <WorldObjectDef>
+    <defName>Caravan_Macrocosm</defName>
+    <label>caravan</label>
+    <description>A group of traveling people.</description>
+    <worldObjectClass>Macrocosm.extensions.Caravan_Macrocosm</worldObjectClass>
+    <texture>World/WorldObjects/Caravan</texture>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>World/WorldObjects/Expanding/Caravan</expandingIconTexture>    
+	<expandingIconPriority>100</expandingIconPriority>
+    <allowCaravanIncidentsWhichGenerateMap>false</allowCaravanIncidentsWhichGenerateMap>
+    <inspectorTabs>
+    </inspectorTabs>
+  </WorldObjectDef>
+  
+  <WorldObjectDef>
+    <defName>ScoutingOutpost</defName>
+    <label>scouting outpost</label>
+    <description>A small outpost for scouting.</description>
+    <worldObjectClass>Macrocosm.macrocosm.ScoutingOutpost</worldObjectClass>
+    <texture>World/ScoutingOutpostZoomedIn</texture>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>World/Expanding/ScoutingOutpostZoomedOut</expandingIconTexture>    
+    <expandingIconPriority>10</expandingIconPriority>    
+  </WorldObjectDef>
+</Defs>

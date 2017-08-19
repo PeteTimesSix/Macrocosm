@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <Macrocosm.defs.OutpostBuildingTagDef>
+    <defName>PowerSupply</defName>
+    <label>power supply</label>
+	<needLabel>Stable power supply</needLabel>
+    <uiIconPath>Buildings/TagIcons/PowerSupply</uiIconPath>
+  </Macrocosm.defs.OutpostBuildingTagDef>
+  
+    <Macrocosm.defs.OutpostBuildingTagDef>
+    <defName>PowerIntermittent</defName>
+    <label>intermittent power supply</label>
+	<needLabel>Intermittent power supply</needLabel>
+    <uiIconPath>Buildings/TagIcons/PowerSupplyIntermittent</uiIconPath>
+  </Macrocosm.defs.OutpostBuildingTagDef>
+  
+  <Macrocosm.defs.OutpostBuildingTagDef>
+    <defName>FoodSupply</defName>
+    <label>food supply</label>
+	<needLabel>Stable food supply</needLabel>
+    <uiIconPath>Buildings/TagIcons/FoodSupply</uiIconPath>
+  </Macrocosm.defs.OutpostBuildingTagDef>
+  
+  <Macrocosm.defs.OutpostBuildingTagDef>
+    <defName>CommunicationDevice</defName>
+    <label>communication device</label>
+	<needLabel>Communication device</needLabel>
+    <uiIconPath>Buildings/TagIcons/CommsDevice</uiIconPath>
+  </Macrocosm.defs.OutpostBuildingTagDef>
+  
+  <Macrocosm.defs.OutpostBuildingTagDef>
+    <defName>ScoutingDevice</defName>
+    <label>scouting device</label>
+	<needLabel>Scouting device</needLabel>
+    <uiIconPath>Buildings/TagIcons/ScoutingDevice</uiIconPath>
+  </Macrocosm.defs.OutpostBuildingTagDef>
+  
+  <Macrocosm.defs.OutpostBuildingTagDef>
+    <defName>Housing</defName>
+    <label>housing</label>
+	<needLabel>Housing</needLabel>
+    <uiIconPath>Buildings/TagIcons/Housing</uiIconPath>
+  </Macrocosm.defs.OutpostBuildingTagDef>
+  
+  <Macrocosm.defs.OutpostBuildingTagDef>
+    <defName>AIHousing</defName>
+    <label>AI infrastructure</label>
+	<needLabel>AI infrastructure</needLabel>
+    <uiIconPath>Buildings/TagIcons/AIHousing</uiIconPath>
+  </Macrocosm.defs.OutpostBuildingTagDef>
+	
+</Defs>

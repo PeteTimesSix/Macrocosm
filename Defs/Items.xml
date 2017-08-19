@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GameData>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Macrocontroller</defName>
+    <label>macrocontroller</label>
+    <description>An advanced computer core that houses a neural network taught to perform a specific task. In its isolated state, the core is dormant. Installed in a proper support structure, it is capable of controlling installations of surprising complexity.</description>
+    <graphicData>
+      <texPath>macrocontrollerOn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>4</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <intricate>true</intricate>
+  </ThingDef>
+  
+   <ThingDef ParentName="ResourceBase">
+    <defName>MacrocontrollerUntrained</defName>
+    <label>untrained macrocontroller</label>
+    <description>An advanced computer core that houses a neural network. In its isolated state, the core is dormant. When taught to perform a specific task and installed in a proper support structure, it can be capable of controlling installations of surprising complexity.</description>
+    <graphicData>
+      <texPath>macrocontrollerOff</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>800</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>4</Mass>
+      <WorkToMake>9000</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+	  <researchPrerequisite>Macrocontrollers</researchPrerequisite>
+	  <unfinishedThingDef>UnfinishedMacrocontroller</unfinishedThingDef>
+    </recipeMaker>
+	<costList>
+		<Gold>1</Gold>
+		<Component>6</Component>
+	</costList>
+	<techLevel>Industrial</techLevel>
+    <intricate>true</intricate>
+  </ThingDef>
+  
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>UnfinishedMacrocontroller</defName>
+    <label>unfinished macrocontroller</label>
+    <graphicData>
+      <texPath>macrocontrollerNotDone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories />
+  </ThingDef>
+
+  
+</GameData>

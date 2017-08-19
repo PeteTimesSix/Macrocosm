@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <Macrocosm.defs.OutpostBuildingSpotDef>
+    <defName>Farm</defName>
+    <label>Farm</label>
+	<color>1,0.9,0.7,0.5</color>
+	<positions>
+	<li>460,16,196,32</li>
+	<li>450,50,196,32</li>
+	<li>440,84,196,32</li>
+	</positions>
+  </Macrocosm.defs.OutpostBuildingSpotDef>
+  
+  <Macrocosm.defs.OutpostBuildingSpotDef>
+    <defName>Megaproject</defName>
+    <label>Project</label>
+	<color>1,0.9,0.7,0.5</color>
+	<positions>
+	<li>32,48,200,100</li>
+	</positions>
+  </Macrocosm.defs.OutpostBuildingSpotDef>
+  
+   <Macrocosm.defs.OutpostBuildingSpotDef>
+    <defName>Building</defName>
+    <label>Home</label>
+	<color>0.8,0.8,0.8,0.5</color>
+	<positions>
+	<li>240,80,180,64</li>
+	</positions>
+  </Macrocosm.defs.OutpostBuildingSpotDef>
+  
+  <Macrocosm.defs.OutpostBuildingSpotDef>
+    <defName>Tower</defName>
+    <label>Tower</label>
+	<color>0.2,0.2,0.2,0.5</color>
+	<positions>
+	<li>445,130,100,48</li>
+	<li>565,125,100,48</li>
+	</positions>
+  </Macrocosm.defs.OutpostBuildingSpotDef>
+  
+  <Macrocosm.defs.OutpostBuildingSpotDef>
+    <defName>Extension</defName>
+    <label>Building</label>
+	<color>0.7,0.5,0.3,0.5</color>
+	<positions>
+	<li>230,150,64,32</li>
+	<li>300,149,64,32</li>
+	<li>370,147,64,32</li>
+	<li>220,35,64,32</li>
+	<li>305,32,64,32</li>
+	<li>380,33,64,32</li>
+	</positions>
+  </Macrocosm.defs.OutpostBuildingSpotDef>
+	
+</Defs>

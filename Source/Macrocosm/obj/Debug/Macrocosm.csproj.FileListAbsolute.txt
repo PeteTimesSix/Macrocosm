@@ -1,0 +1,3 @@
+C:\Macrocosm\Macrocosm\Source\Macrocosm\obj\Debug\Macrocosm.csprojResolveAssemblyReference.cache
+C:\Macrocosm\Macrocosm\Assemblies\Macrocosm.dll
+C:\Macrocosm\Macrocosm\Source\Macrocosm\obj\Debug\Macrocosm.dll

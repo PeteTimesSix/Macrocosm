@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<NPCaravan_Raiding>Assaulting {0}.</NPCaravan_Raiding>
+	<NPCaravan_ComingHome>Coming home to {0}.</NPCaravan_ComingHome>
+	<NPCaravan_Trading>Trading with {0}.</NPCaravan_Trading>
+	<NPCaravan_TravellingBy>Travelling by {0}.</NPCaravan_TravellingBy>
+	<NPCaravan_Visiting>Visiting {0}.</NPCaravan_Visiting>
+	
+	<CaravanSpottedLetterLabel>Spotted caravan headed for {0}.</CaravanSpottedLetterLabel>
+	<CaravanSpottedLetterText>A caravan from {0} has been spotted, headed for {1}.</CaravanSpottedLetterText>
+	
+	<CaravanKind_RaidSpotText>They seem ready for a fight.</CaravanKind_RaidSpotText>
+	<CaravanKind_TraderSpotText>They seem to be loaded with goods.</CaravanKind_TraderSpotText>
+	<CaravanKind_GenericSpotText>They seem to be travellers.</CaravanKind_GenericSpotText>
+	
+	<Trainer_FinishedTraining>Core training finished.</Trainer_FinishedTraining>
+	<Trainer_TrainingInProgress>Core training in progress.</Trainer_TrainingInProgress>
+	<Trainer_TrainingInProgressNoPower>Core training halted (no power).</Trainer_TrainingInProgressNoPower>
+	<Trainer_NoCore>No core inserted.</Trainer_NoCore>
+	
+	<ManageOutpost>Manage outpost</ManageOutpost>	
+	<BuildOutpost>Build outpost</BuildOutpost>
+	
+	<OutpostMenu_Slot>{0} slot</OutpostMenu_Slot>
+	
+	<OutpostMenu_Construct>Construct</OutpostMenu_Construct>
+	<OutpostMenu_Deconstruct>Demolish</OutpostMenu_Deconstruct>
+	
+	<OutpostMenu_Provides>Provides:</OutpostMenu_Provides>
+	
+	<OutpostMenu_Scouting>Scouting</OutpostMenu_Scouting>
+	<OutpostMenu_Autonomy>Autonomy</OutpostMenu_Autonomy>
+	<OutpostMenu_Comms>Comms</OutpostMenu_Comms>
+	<OutpostMenu_Misc>Misc.</OutpostMenu_Misc>
+	
+	<ScoutingRange_Printout>Vision range: </ScoutingRange_Printout>
+	<CommsRange_Printout>Comms range: </CommsRange_Printout>
+	<MannedBy_Printout>Manned by: </MannedBy_Printout>
+	<NotManned_Printout>Click to assign</NotManned_Printout>
+	<AssignOutpostMaster_Title>Assign manager</AssignOutpostMaster_Title>
+
+	<OrGap>or...</OrGap>
+	<NotPrefix>NOT </NotPrefix>
+	<TagNotAvailable>Not available</TagNotAvailable>
+	
+	<ConfirmDestroyManningThing>Uassigning the current manager with no caravan present will lead to its destruction. Are you certain?</ConfirmDestroyManningThing>
+	<ConfirmDestroyCaravan>This colonist is the only member of your caravan. Assinging them to the outpost will result in the loss of any assets (such as pack animals and items carried by them) not directly in their possession. Are you certain?</ConfirmDestroyCaravan>
+	<UnassignManager>Unassign</UnassignManager>
+	
+	<Message_CannotConstruct_NoSlot>Cannot construct {0} (no free spots)</Message_CannotConstruct_NoSlot>	
+	<Message_CannotConstruct_MissingPrerequisiteBuilding>Cannot construct {0} (prerequisite {1} is missing)</Message_CannotConstruct_MissingPrerequisiteBuilding>	
+	<Message_CannotConstruct_MissingPrerequisiteBuildingTag>Cannot construct {0} (prerequisite {1} is missing)</Message_CannotConstruct_MissingPrerequisiteBuildingTag>	
+	<Message_CannotConstruct_MissingResearch>Cannot construct {0} (research {1} is missing) (THIS SHOULD NEVER BE SEEN, REPORT AS A BUG)</Message_CannotConstruct_MissingResearch>
+	<Message_CannotConstruct_MissingResources>Cannot construct {0} (lacking {1})</Message_CannotConstruct_MissingResources>		
+	
+	<Message_CannotDeconstruct_PrerequisiteBuilding>Cannot deconstruct {0} (required by {1})</Message_CannotDeconstruct_PrerequisiteBuilding>	
+	<Message_CannotDeconstruct_PrerequisiteBuildingTag>Cannot deconstruct {0} (provides {1} required by {2})</Message_CannotDeconstruct_PrerequisiteBuildingTag>
+	<Message_CannotDeconstruct_PrerequisiteOccupantTag>Cannot deconstruct {0} (required by {1})</Message_CannotDeconstruct_PrerequisiteOccupantTag>	
+</LanguageData>

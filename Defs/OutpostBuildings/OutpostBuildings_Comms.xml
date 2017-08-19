@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <Macrocosm.defs.OutpostBuildingDef ParentName="OutpostBuildingBase_Comms">
+	<defName>SmokeSignal</defName>
+    <label>signal fire</label>
+    <graphicData>
+      <texPath>Buildings/firepit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tags>
+		<li>CommunicationDevice</li>
+	</tags>
+    <uiIconPath>Buildings/Icons/fireplace</uiIconPath>
+    <description>A large fire. The smoke can be used as a low-tech means of communication.</description>
+	<usedSpot>Extension</usedSpot>
+	<statBases>
+      <CommunicationTileRange>8</CommunicationTileRange>
+    </statBases>
+    <skillRequirements>
+	  <li>
+	    <skill>Growing</skill>
+	    <minLevel>0</minLevel>
+	  </li>
+    </skillRequirements>
+	<prerequisiteSpecials>
+      <li>FarmingPeriodShort</li>
+    </prerequisiteSpecials>
+    <costList>
+      <WoodLog>80</WoodLog>
+    </costList>
+  </Macrocosm.defs.OutpostBuildingDef>
+  
+   <Macrocosm.defs.OutpostBuildingDef ParentName="OutpostBuildingBase_Comms">
+	<defName>BasicRadio</defName>
+    <label>radio</label>
+    <graphicData>
+      <texPath>Buildings/basicradio</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tags>
+		<li>CommunicationDevice</li>
+	</tags>
+    <uiIconPath>Buildings/Icons/radio</uiIconPath>
+	<layer>0</layer>
+    <description>A simple shortwave radio, with limited broadcast range.</description>
+	<usedSpot>Extension</usedSpot>
+	<prerequisiteResearch>
+      <li>Electricity</li>
+    </prerequisiteResearch>
+	<prerequisiteBuildingTags>
+      <li>PowerSupply</li>
+    </prerequisiteBuildingTags>
+	<statBases>
+      <CommunicationTileRange>15</CommunicationTileRange>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Component>3</Component>
+    </costList>
+  </Macrocosm.defs.OutpostBuildingDef>
+  
+  <Macrocosm.defs.OutpostBuildingDef ParentName="OutpostBuildingBase_Comms">
+	<defName>BigRadio</defName>
+    <label>radio tower</label>
+    <graphicData>
+      <texPath>Buildings/radiotower</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tags>
+		<li>CommunicationDevice</li>
+	</tags>
+    <uiIconPath>Buildings/Icons/radioTower</uiIconPath>
+	<usedSpot>Tower</usedSpot>
+	<layer>0</layer>
+    <description>A large high-band shortwave antenna that greatly extends the radio's effective range.</description>
+	<prerequisiteResearch>
+      <li>MicroelectronicsBasics</li>
+    </prerequisiteResearch>
+	<prerequisiteBuildings>
+      <li>BasicRadio</li>
+    </prerequisiteBuildings>
+	<prerequisiteBuildingTags>
+      <li>PowerSupply</li>
+    </prerequisiteBuildingTags>
+	<statBases>
+      <CommunicationTileRange>25</CommunicationTileRange>
+    </statBases>
+    <costList>
+      <Steel>200</Steel>
+      <Component>2</Component>
+    </costList>
+  </Macrocosm.defs.OutpostBuildingDef>
+  
+   <Macrocosm.defs.OutpostBuildingDef ParentName="OutpostBuildingBase_Comms">
+	<defName>CourierDrones</defName>
+    <label>courier drone</label>
+    <graphicData>
+      <texPath>Buildings/messagelauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tags>
+		<li>CommunicationDevice</li>
+	</tags>
+    <uiIconPath>Buildings/Icons/deliverydrones</uiIconPath>
+    <description>A launch system for autonomous message delivery drones capable of high-atmosphere supersonic flight.</description>
+	<usedSpot>Extension</usedSpot>	
+	<prerequisiteResearch>
+      <li>Drones</li>
+    </prerequisiteResearch>
+	<prerequisiteBuildingTags>
+      <li>PowerSupply</li>
+    </prerequisiteBuildingTags>
+	<statBases>
+      <CommunicationTileRange>30</CommunicationTileRange>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+      <Plasteel>20</Plasteel>
+      <Component>3</Component>
+    </costList>
+  </Macrocosm.defs.OutpostBuildingDef>
+  
+ <Macrocosm.defs.OutpostBuildingDef ParentName="OutpostBuildingBase_Comms">
+	<defName>LaserRadio</defName>
+    <label>B-NCI laser</label>
+    <graphicData>
+      <texPath>Buildings/laserradio</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tags>
+		<li>CommunicationDevice</li>
+	</tags>
+    <uiIconPath>Buildings/Icons/laser</uiIconPath>
+    <description>A laser communicator that uses the planet's unusually high number of large natural satellites to reflect messages back to distant planet-side receivers.</description>
+	<usedSpot>Extension</usedSpot>	
+	<prerequisiteResearch>
+      <li>CommLasers</li>
+    </prerequisiteResearch>
+	<prerequisiteBuildingTags>
+      <li>PowerSupply</li>
+    </prerequisiteBuildingTags>
+	<statBases>
+      <CommunicationTileRange>50</CommunicationTileRange>
+    </statBases>
+    <costList>
+      <Plasteel>100</Plasteel>
+      <Component>4</Component>
+    </costList>
+  </Macrocosm.defs.OutpostBuildingDef>
+</Defs>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+    <Macrocosm.defs.OutpostBuildingDef Name="OutpostBuildingBase" Abstract="True">
+	<layer>0</layer>
+	<statBases>
+    </statBases>
+	<positionOnOutpostView>-1000,-1000</positionOnOutpostView>
+	</Macrocosm.defs.OutpostBuildingDef>
+	
+  <Macrocosm.defs.OutpostBuildingDef Name="OutpostBuildingBase_Scouting" Abstract="True" ParentName="OutpostBuildingBase">
+	<category>Scouting</category>
+  </Macrocosm.defs.OutpostBuildingDef>
+  
+  <Macrocosm.defs.OutpostBuildingDef Name="OutpostBuildingBase_Autonomy" Abstract="True" ParentName="OutpostBuildingBase">
+	<category>Autonomy</category>
+  </Macrocosm.defs.OutpostBuildingDef>
+  
+  <Macrocosm.defs.OutpostBuildingDef Name="OutpostBuildingBase_Comms" Abstract="True" ParentName="OutpostBuildingBase">
+	<category>Comms</category>
+  </Macrocosm.defs.OutpostBuildingDef>
+  
+  <Macrocosm.defs.OutpostBuildingDef Name="OutpostBuildingBase_Misc" Abstract="True" ParentName="OutpostBuildingBase">
+	<category>Misc</category>
+  </Macrocosm.defs.OutpostBuildingDef>
+</Defs>

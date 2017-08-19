@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>MacrocontrollerTrainer</defName>
+    <label>macrocontroller training simulator</label>
+    <thingClass>Macrocosm.macrocosm.buildings.Building_MacrocontrollerTrainer</thingClass>
+    <graphicData>
+      <texPath>trainer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0.05,0.1,0.9,0.9)</rect>
+      </damageData>
+    </graphicData>
+    <size>(2,2)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.45</fillPercent>
+    <pathCost>60</pathCost>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>0.8</Flammability>
+    </statBases>
+    <description>A simulated environment for training macrocontroller cores on how to perform specific tasks. Powered by an AI persona core.</description>
+    <costList>
+		<Steel>50</Steel>
+		<Gold>20</Gold>
+		<Component>10</Component>
+		<AIPersonaCore>1</AIPersonaCore>
+    </costList>
+		<comps>
+		  <li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>500</basePowerConsumption>
+		  </li>
+		  <li Class="CompProperties_Flickable"/>
+		</comps>
+    <tickerType>Rare</tickerType>
+    <rotatable>true</rotatable>
+    <designationCategory>Production</designationCategory>
+    <researchPrerequisites>
+		<li>Macrocontrollers</li>
+	</researchPrerequisites>
+  </ThingDef>
+
+</Buildings>

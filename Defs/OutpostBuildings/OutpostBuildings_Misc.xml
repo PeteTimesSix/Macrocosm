@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+  <Macrocosm.defs.OutpostBuildingDef ParentName="OutpostBuildingBase_Misc">
+	<defName>AIInterface</defName>
+    <label>AI interface</label>
+    <graphicData>
+      <texPath>Buildings/aicore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tags>
+		<li>AIHousing</li>
+	</tags>
+    <uiIconPath>Buildings/Icons/aiCore</uiIconPath>
+    <description>An integration suite that enables an AI module to run the outpost.</description>
+	<usedSpot>Extension</usedSpot>
+	<prerequisiteBuildingTags>
+      <li>PowerSupply</li>
+    </prerequisiteBuildingTags>
+    <costList>
+      <Steel>50</Steel>
+      <Plasteel>20</Plasteel>
+      <Gold>10</Gold>
+      <Component>4</Component>
+    </costList>
+  </Macrocosm.defs.OutpostBuildingDef>
+  
+  <Macrocosm.defs.OutpostBuildingDef ParentName="OutpostBuildingBase_Misc">
+	<defName>MainBuildingAscetic</defName>
+    <label>camp</label>
+    <graphicData>
+      <texPath>Buildings/camp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tags>
+		<li>Housing</li>
+	</tags>
+    <uiIconPath>Buildings/Icons/tent</uiIconPath>
+	<usedSpot>Building</usedSpot>
+    <description>A tent and some camping supplies. Suitable only for the least demanding of colonists.</description>
+	<requiredTraits>      
+		<li>Ascetic</li>
+	</requiredTraits>
+    <costList>
+      <WoodLog>50</WoodLog>
+    </costList>
+  </Macrocosm.defs.OutpostBuildingDef>
+  
+    <Macrocosm.defs.OutpostBuildingDef ParentName="OutpostBuildingBase_Misc">
+	<defName>MainBuilding</defName>
+    <label>cottage</label>
+    <graphicData>
+      <texPath>Buildings/cottage</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tags>
+		<li>Housing</li>
+	</tags>
+    <uiIconPath>Buildings/Icons/house</uiIconPath>
+	<usedSpot>Building</usedSpot>
+    <description>A small, comfortable building for work and rest.</description>
+    <costList>
+      <WoodLog>120</WoodLog>
+      <Steel>20</Steel>
+    </costList>
+  </Macrocosm.defs.OutpostBuildingDef>
+  
+  <Macrocosm.defs.OutpostBuildingDef ParentName="OutpostBuildingBase_Misc">
+	<defName>MainBuildingLuxury</defName>
+    <label>homestead</label>
+    <graphicData>
+      <texPath>Buildings/homestead</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tags>
+		<li>Housing</li>
+	</tags>
+    <uiIconPath>Buildings/Icons/largeHouse</uiIconPath>
+	<usedSpot>Building</usedSpot>
+    <description>A large building for work, rest, and all the comforts of home.</description>	
+	<prerequisiteResearch>
+      <li>Electricity</li>
+    </prerequisiteResearch>
+	<prerequisiteBuildingTags>
+      <li>PowerSupply</li>
+    </prerequisiteBuildingTags>
+    <costList>
+	  <WoodLog>100</WoodLog>
+      <Steel>50</Steel>
+      <Plasteel>10</Plasteel>
+    </costList>
+  </Macrocosm.defs.OutpostBuildingDef>
+</Defs>

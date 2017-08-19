@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<JobDefs>
+
+  <JobDef>
+    <defName>JobScout</defName>
+    <driverClass>Macrocosm.macrocosm.ai.JobDriver_Scout</driverClass>
+    <reportString>scouting at TargetA.</reportString>
+  </JobDef>
+  
+  <JobDef>
+    <defName>FillMacrocontrollerTrainer</defName>
+    <driverClass>Macrocosm.macrocosm.ai.JobDriver_FillMacrocontrollerTrainer</driverClass>
+    <reportString>inserting core into TargetA.</reportString>
+  </JobDef>
+  
+  <JobDef>
+    <defName>EmptyMacrocontrollerTrainer</defName>
+    <driverClass>Macrocosm.macrocosm.ai.JobDriver_EmptyMacrocontrollerTrainer</driverClass>
+    <reportString>removing core from TargetA.</reportString>
+  </JobDef>
+  
+</JobDefs>

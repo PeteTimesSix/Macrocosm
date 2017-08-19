@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <StatDef>
+    <defName>ScoutingTileRange</defName>
+    <label>scouting tile range</label>
+    <description>The scouting tile range. Determines how far this allows you to see on the world map.</description>
+    <category>Building</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <minValue>1</minValue>
+    <roundValue>true</roundValue>
+    <toStringStyle>Integer</toStringStyle>
+    <roundToFiveOver>200</roundToFiveOver>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+  
+   <StatDef>
+    <defName>CommunicationTileRange</defName>
+    <label>comms tile range</label>
+    <description>The communication tile range. A scouting outpost has to be this many tiles or fewer from the nearest colony.</description>
+    <category>Building</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <minValue>1</minValue>
+    <roundValue>true</roundValue>
+    <toStringStyle>Integer</toStringStyle>
+    <roundToFiveOver>200</roundToFiveOver>
+    <showIfUndefined>false</showIfUndefined>
+  </StatDef>
+</Defs>

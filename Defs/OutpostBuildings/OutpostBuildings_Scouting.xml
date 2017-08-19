@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <Macrocosm.defs.OutpostBuildingDef ParentName="OutpostBuildingBase_Scouting">
+	<defName>ScoutingTower</defName>
+    <label>lookout</label>
+    <graphicData>
+      <texPath>Buildings/scouttower</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<usedSpot>Tower</usedSpot>
+	<tags>
+		<li>ScoutingDevice</li>
+	</tags>
+    <uiIconPath>Buildings/Icons/scoutTower</uiIconPath>
+    <description>An elevated platform that provides a vantage point from which to observe the local area.</description>
+	<statBases>
+      <ScoutingTileRange>2</ScoutingTileRange>
+    </statBases>
+    <costList>
+      <WoodLog>150</WoodLog>
+    </costList>
+  </Macrocosm.defs.OutpostBuildingDef>
+  
+    <Macrocosm.defs.OutpostBuildingDef ParentName="OutpostBuildingBase_Scouting">
+	<defName>CameraSystem</defName>
+    <label>CCTV system</label>
+    <graphicData>
+      <texPath>Buildings/camsystem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tags>
+		<li>ScoutingDevice</li>
+	</tags>
+    <uiIconPath>Buildings/Icons/cameras</uiIconPath>
+    <description>High-magnification cameras installed in strategic locations and the system necessary to remotely operate and power them.</description>
+	<usedSpot>Extension</usedSpot>
+	<prerequisiteResearch>
+      <li>MicroelectronicsBasics</li>
+    </prerequisiteResearch>
+	<prerequisiteBuildingTags>
+      <li>PowerSupply</li>
+    </prerequisiteBuildingTags>
+	<statBases>
+      <ScoutingTileRange>3</ScoutingTileRange>
+    </statBases>
+    <costList>
+      <Steel>200</Steel>
+      <Component>5</Component>
+    </costList>
+  </Macrocosm.defs.OutpostBuildingDef>
+  
+  <Macrocosm.defs.OutpostBuildingDef ParentName="OutpostBuildingBase_Scouting">
+	<defName>CameraDroneSystem</defName>
+    <label>C-4M drones</label>
+    <graphicData>
+      <texPath>Buildings/dronelauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tags>
+		<li>ScoutingDevice</li>
+	</tags>
+    <uiIconPath>Buildings/Icons/cameradrones</uiIconPath>
+    <description>A miniaturised facility for the manufacture, launch and control of camera micro-drones capable of long-duration sustained flight.</description>
+	<usedSpot>Extension</usedSpot>	
+	<prerequisiteResearch>
+      <li>Drones</li>
+    </prerequisiteResearch>
+	<prerequisiteBuildingTags>
+      <li>PowerSupply</li>
+    </prerequisiteBuildingTags>
+	<statBases>
+      <ScoutingTileRange>4</ScoutingTileRange>
+    </statBases>
+    <costList>
+      <Steel>200</Steel>
+      <Plasteel>50</Plasteel>
+      <Component>8</Component>
+    </costList>
+  </Macrocosm.defs.OutpostBuildingDef>
+</Defs>

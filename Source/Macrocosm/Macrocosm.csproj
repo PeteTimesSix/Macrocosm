@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD8918E2-9E88-470D-914F-0F286AB80071}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Macrocosm</RootNamespace>
+    <AssemblyName>Macrocosm</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>F:\SteamLibrary\SteamApps\common\RimWorld\Mods\HugsLib\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>F:\SteamLibrary\SteamApps\common\RimWorld\RimWorldWin_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="HugsLib">
+      <HintPath>F:\SteamLibrary\SteamApps\common\RimWorld\Mods\HugsLib\Assemblies\HugsLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>F:\SteamLibrary\SteamApps\common\RimWorld\RimWorldWin_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="defs\Macrocosm_JobDefOf.cs" />
+    <Compile Include="defs\Macrocosm_Materials.cs" />
+    <Compile Include="defs\Macrocosm_StatDefOf.cs" />
+    <Compile Include="defs\Macrocosm_ThingDefOf.cs" />
+    <Compile Include="defs\Macrocosm_WorkDefOf.cs" />
+    <Compile Include="defs\Macrocosm_WorldObjectDefOf.cs" />
+    <Compile Include="defs\OutpostBuildingDef.cs" />
+    <Compile Include="defs\OutpostBuildingSpotDef.cs" />
+    <Compile Include="defs\OutpostBuildingTagDef.cs" />
+    <Compile Include="defs\OutpostBuildingTagDefOf.cs" />
+    <Compile Include="defs\SpecialPrerequisiteDef.cs" />
+    <Compile Include="defs\SpecialPrerequisiteDefOf.cs" />
+    <Compile Include="enums\Enums.cs" />
+    <Compile Include="extensions\Caravan_Macrocosm.cs" />
+    <Compile Include="extensions\Extensions.cs" />
+    <Compile Include="extensions\ISpottable.cs" />
+    <Compile Include="extensions\KeyedPriorityQueue.cs" />
+    <Compile Include="Macrocosm.cs" />
+    <Compile Include="macrocosm\ai\JobDriver_EmptyMacrocontrollerTrainer.cs" />
+    <Compile Include="macrocosm\ai\JobDriver_FillMacrocontrollerTrainer.cs" />
+    <Compile Include="macrocosm\ai\WorkGiver_FillMacrocontrollerTrainer.cs" />
+    <Compile Include="macrocosm\ai\WorkGiver_RemoveMacrocontrollerFromTrainer.cs" />
+    <Compile Include="macrocosm\ai\WorkGiver_Scout.cs" />
+    <Compile Include="macrocosm\ai\Toils_Scout.cs" />
+    <Compile Include="macrocosm\buildings\Building_MacrocontrollerTrainer.cs" />
+    <Compile Include="macrocosm\buildings\Building_ScoutingLocationAutomatic.cs" />
+    <Compile Include="macrocosm\buildings\Building_ScoutingLocationManned.cs" />
+    <Compile Include="macrocosm\buildings\CompProperties_ScoutLocationAutomatic.cs" />
+    <Compile Include="macrocosm\buildings\CompProperties_ScoutLocationManned.cs" />
+    <Compile Include="macrocosm\buildings\Comp_ScoutLocationAutomatic.cs" />
+    <Compile Include="macrocosm\buildings\Comp_ScoutLocationManned.cs" />
+    <Compile Include="macrocosm\CaravanGoalDecisionmaker.cs" />
+    <Compile Include="macrocosm\ExtraWidgets.cs" />
+    <Compile Include="macrocosm\ai\JobDriver_Scout.cs" />
+    <Compile Include="macrocosm\Macrocosm_Textures.cs" />
+    <Compile Include="macrocosm\RandomUtilityFunctions.cs" />
+    <Compile Include="macrocosm\RunningEventManager.cs" />
+    <Compile Include="macrocosm\runningEvents\BaseRunningEvent.cs" />
+    <Compile Include="macrocosm\runningEvents\CloudyRunningEvent.cs" />
+    <Compile Include="macrocosm\runningEvents\RunningEvent_ToxicFallout.cs" />
+    <Compile Include="macrocosm\runningEvents\RunningEvent_VolcanicWinter.cs" />
+    <Compile Include="macrocosm\ScoutingOutpost.cs" />
+    <Compile Include="macrocosm\StoredCaravan.cs" />
+    <Compile Include="macrocosm\ui\Dialog_ScoutingOutpostManager.cs" />
+    <Compile Include="macrocosm\ui\FloatMenuOptionWithSidebar.cs" />
+    <Compile Include="macrocosm\ui\FloatMenuWithSidebar.cs" />
+    <Compile Include="patches\Caravan.cs" />
+    <Compile Include="patches\Selector.cs" />
+    <Compile Include="patches\MapParent.cs" />
+    <Compile Include="patches\StatsReportUtility.cs" />
+    <Compile Include="patches\testing.cs" />
+    <Compile Include="patches\MakeGameCondition.cs" />
+    <Compile Include="rimworld\ICloudLayer.cs" />
+    <Compile Include="rimworld\WorldLayer_VolcanicWinter.cs" />
+    <Compile Include="rimworld\WorldLayer_ToxicFallout.cs" />
+    <Compile Include="rimworld\WorldLayer_TestDraw.cs" />
+    <Compile Include="saveData\MacrocosmSaveData.cs" />
+    <Compile Include="macrocosm\FactionBaseSelector.cs" />
+    <Compile Include="macrocosm\RimworldUtilities.cs" />
+    <Compile Include="macrocosm\ScoutingManager.cs" />
+    <Compile Include="patches\IncidentQueue.cs" />
+    <Compile Include="patches\Pawns.cs" />
+    <Compile Include="patches\Raids.cs" />
+    <Compile Include="patches\TradeCaravans.cs" />
+    <Compile Include="patches\Visitors.cs" />
+    <Compile Include="patches\WorldMap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rimworld\CaravanArrival\NPCaravanArrivalAction.cs" />
+    <Compile Include="rimworld\CaravanArrival\NPCaravanArrivalAction_RaidColony.cs" />
+    <Compile Include="rimworld\CaravanArrival\NPCaravanArrivalAction_ReturnHome.cs" />
+    <Compile Include="rimworld\CaravanArrival\NPCaravanArrivalAction_TradeWithColony.cs" />
+    <Compile Include="rimworld\CaravanArrival\NPCaravanArrivalAction_TravelByColony.cs" />
+    <Compile Include="rimworld\CaravanArrival\NPCaravanArrivalAction_VisitColony.cs" />
+    <Compile Include="rimworld\WorldLayer_FogOfWar.cs" />
+    <Compile Include="rimworld\WorldMaterials_Macrocosm.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="macrocosm\outpostBuildings\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>RD /S /Q "F:\SteamLibrary\SteamApps\common\RimWorld\Mods\Macrocosm"
+
+robocopy "C:\Macrocosm\Macrocosm" "F:\SteamLibrary\SteamApps\common\RimWorld\Mods\Macrocosm" /COPYALL /E
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

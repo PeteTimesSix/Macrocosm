@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+
+	<WorkGiverDef>
+		<defName>ScoutGiver</defName>
+		<label>scout</label>
+		<giverClass>Macrocosm.macrocosm.ai.WorkGiver_Scout</giverClass>
+		<workType>ScoutingWork</workType>
+		<verb>scout</verb>
+		<gerund>scouting</gerund>
+		<priorityInType>50</priorityInType>
+		<directOrderable>true</directOrderable>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
+		<defName>TrainerFillGiver</defName>
+		<label>insert core</label>
+		<giverClass>Macrocosm.macrocosm.ai.WorkGiver_FillMacrocontrollerTrainer</giverClass>
+		<workType>Hauling</workType>
+		<verb>insert core</verb>
+		<gerund>inserting core</gerund>
+		<priorityInType>15</priorityInType>
+		<directOrderable>true</directOrderable>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
+		<defName>TrainerEmptyGiver</defName>
+		<label>remove core</label>
+		<giverClass>Macrocosm.macrocosm.ai.WorkGiver_RemoveMacrocontrollerFromTrainer</giverClass>
+		<workType>Hauling</workType>
+		<verb>remove core</verb>
+		<gerund>removing core</gerund>
+		<priorityInType>16</priorityInType>
+		<directOrderable>true</directOrderable>
+	</WorkGiverDef>
+	
+</WorkGivers>

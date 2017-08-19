@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <Macrocosm.defs.OutpostBuildingDef Name="FarmBase" Abstract="True" ParentName="OutpostBuildingBase_Autonomy">
+    <usedSpot>Farm</usedSpot>
+	<tags>
+		<li>FoodSupply</li>
+	</tags>
+  </Macrocosm.defs.OutpostBuildingDef>
+  
+  <Macrocosm.defs.OutpostBuildingDef ParentName="FarmBase">
+	<defName>BasicFarm</defName>
+    <label>basic farm</label>
+    <graphicData>
+      <texPath>Buildings/basicfarm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Buildings/Icons/farm</uiIconPath>
+    <description>A basic farm that supplies the outpost with a stable food supply by producing simple crops.</description>
+    <costList>
+      <WoodLog>50</WoodLog>
+    </costList>
+    <skillRequirements>
+	  <li>
+	    <skill>Growing</skill>
+	    <minLevel>3</minLevel>
+	  </li>
+    </skillRequirements>
+	<prerequisiteSpecials>
+      <li>FarmingPeriodLong</li>
+    </prerequisiteSpecials>
+  </Macrocosm.defs.OutpostBuildingDef>
+  
+  <Macrocosm.defs.OutpostBuildingDef ParentName="FarmBase">
+	<defName>HighYieldFarm</defName>
+    <label>high-yield farm</label>
+    <graphicData>
+      <texPath>Buildings/highfarm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Buildings/Icons/farm</uiIconPath>
+    <description>A farm that supplies the outpost with a stable food supply by producing more demanding, high-yield crops.</description>
+    <costList>
+      <WoodLog>50</WoodLog>
+    </costList>
+	<skillRequirements>
+	  <li>
+	    <skill>Growing</skill>
+	    <minLevel>6</minLevel>
+	  </li>
+    </skillRequirements>
+	<prerequisiteSpecials>
+      <li>FarmingPeriodShort</li>
+    </prerequisiteSpecials>
+  </Macrocosm.defs.OutpostBuildingDef>
+  
+  <Macrocosm.defs.OutpostBuildingDef ParentName="FarmBase">
+	<defName>AutoFarm</defName>
+    <label>automated farm</label>
+    <graphicData>
+      <texPath>Buildings/autofarm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Buildings/Icons/farmauto</uiIconPath>
+    <description>A technologically-enhanced farm that simplifies the production of crops.</description>
+	<prerequisiteResearch>
+      <li>MicroelectronicsBasics</li>
+    </prerequisiteResearch><prerequisiteBuildingTags>
+      <li>PowerSupply</li>
+    </prerequisiteBuildingTags>
+    <costList>
+      <WoodLog>50</WoodLog>
+      <Steel>50</Steel>
+      <Component>2</Component>
+    </costList>
+	<skillRequirements>
+	  <li>
+	    <skill>Growing</skill>
+	    <minLevel>0</minLevel>
+	  </li>
+    </skillRequirements>
+	<prerequisiteSpecials>
+      <li>FarmingPeriodLong</li>
+    </prerequisiteSpecials>
+  </Macrocosm.defs.OutpostBuildingDef>
+  
+  <Macrocosm.defs.OutpostBuildingDef ParentName="FarmBase">
+	<defName>HydroponicFarm</defName>
+    <label>hydroponics</label>
+    <graphicData>
+      <texPath>Buildings/hydrofarm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Buildings/Icons/hydrophonics</uiIconPath>
+    <description>A heated building hosting a set of hydroponic growing beds that supply the outpost with a stable food supply.</description>	
+	<prerequisiteResearch>
+      <li>Hydroponics</li>
+    </prerequisiteResearch>
+	<prerequisiteBuildingTags>
+      <li>PowerSupply</li>
+    </prerequisiteBuildingTags>
+    <costList>
+      <Steel>200</Steel>
+      <Component>4</Component>
+    </costList>
+	<skillRequirements>
+	  <li>
+	    <skill>Growing</skill>
+	    <minLevel>6</minLevel>
+	  </li>
+    </skillRequirements>
+  </Macrocosm.defs.OutpostBuildingDef>
+  
+    <Macrocosm.defs.OutpostBuildingDef ParentName="OutpostBuildingBase_Autonomy">
+	<defName>HuntingLodge</defName>
+    <label>hunter's lodge</label>
+    <graphicData>
+      <texPath>Buildings/hunterslodge</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tags>
+		<li>FoodSupply</li>
+	</tags>
+	<usedSpot>Extension</usedSpot>
+    <uiIconPath>Buildings/Icons/hunterslodge</uiIconPath>
+    <description>A compact hunter's lodge. All a hunter needs to maintain their weapon.</description>
+    <skillRequirements>
+	  <li>
+	    <skill>Shooting</skill>
+	    <minLevel>8</minLevel>
+	  </li>
+    </skillRequirements>
+    <costList>
+      <WoodLog>50</WoodLog>
+      <Steel>10</Steel>
+    </costList>
+	<prerequisiteSpecials>
+      <li>HuntingAnimals</li>
+      <li>RangedWeapon</li>
+    </prerequisiteSpecials>
+  </Macrocosm.defs.OutpostBuildingDef>
+  
+  <Macrocosm.defs.OutpostBuildingDef ParentName="OutpostBuildingBase_Autonomy">
+	<defName>FueledGenerator</defName>
+    <label>fueled generator</label>
+    <graphicData>
+      <texPath>Buildings/fueledgenerator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tags>
+		<li>PowerSupply</li>
+	</tags>
+	<usedSpot>Extension</usedSpot>
+    <uiIconPath>Buildings/Icons/fuelgen</uiIconPath>
+    <description>A fueled power generator. Runs on locally sourced wood.</description>
+	<prerequisiteResearch>
+      <li>Electricity</li>
+    </prerequisiteResearch>
+    <skillRequirements>
+	  <li>
+	    <skill>Growing</skill>
+	    <minLevel>0</minLevel>
+	  </li>
+    </skillRequirements>
+	<prerequisiteSpecials>
+      <li>FarmingPeriodShort</li>
+    </prerequisiteSpecials>
+    <costList>
+      <Steel>100</Steel>
+      <Component>1</Component>
+    </costList>
+  </Macrocosm.defs.OutpostBuildingDef>
+  
+  <Macrocosm.defs.OutpostBuildingDef ParentName="OutpostBuildingBase_Autonomy">
+	<defName>SolarPanels</defName>
+    <label>solar panels</label>
+    <graphicData>
+      <texPath>Buildings/solarfarm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tags>
+		<li>PowerIntermittent</li>
+	</tags>
+	<usedSpot>Farm</usedSpot>
+    <uiIconPath>Buildings/Icons/solarpanels</uiIconPath>
+    <description>A solar panel grid. Pair with a power storage solution to supply the outpost with power.</description>
+	<prerequisiteResearch>
+      <li>SolarPanels</li>
+    </prerequisiteResearch>
+    <costList>
+      <Steel>100</Steel>
+      <Component>3</Component>
+    </costList>
+  </Macrocosm.defs.OutpostBuildingDef>
+  
+  <Macrocosm.defs.OutpostBuildingDef ParentName="OutpostBuildingBase_Autonomy">
+	<defName>WindTurbine</defName>
+    <label>wind turbine</label>
+    <graphicData>
+      <texPath>Buildings/windturbine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tags>
+		<li>PowerIntermittent</li>
+	</tags>
+	<usedSpot>Tower</usedSpot>
+    <uiIconPath>Buildings/Icons/windturbine</uiIconPath>
+    <description>A wind turbine. Pair with a power storage solution to supply the outpost with power.</description>
+	<prerequisiteResearch>
+      <li>Electricity</li>
+    </prerequisiteResearch>
+    <costList>
+      <Steel>100</Steel>
+      <Component>2</Component>
+    </costList>
+  </Macrocosm.defs.OutpostBuildingDef>
+  
+    <Macrocosm.defs.OutpostBuildingDef ParentName="OutpostBuildingBase_Autonomy">
+	<defName>BatteryBank</defName>
+    <label>battery bank</label>
+    <graphicData>
+      <texPath>Buildings/batterybank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tags>
+		<li>PowerSupply</li>
+	</tags>
+    <uiIconPath>Buildings/Icons/battery</uiIconPath>
+	<usedSpot>Extension</usedSpot>
+    <description>A capacitor/battery bank, used to store power generated by intermittent power sources.</description>
+	<prerequisiteResearch>
+      <li>Batteries</li>
+    </prerequisiteResearch>
+	<prerequisiteBuildingTags>
+      <li>PowerIntermittent</li>
+    </prerequisiteBuildingTags>
+    <costList>
+      <Steel>75</Steel>
+      <Component>3</Component>
+    </costList>
+  </Macrocosm.defs.OutpostBuildingDef>
+</Defs>

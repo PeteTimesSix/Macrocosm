@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<WorkTypeDefs>
+
+	<WorkTypeDef>
+		<defName>ScoutingWork</defName>
+		<labelShort>Scout</labelShort>
+		<pawnLabel>Scout</pawnLabel>
+		<gerundLabel>Scouting</gerundLabel>
+		<description>Manning watchtowers, camera grids, and other long-distance security systems.</description>
+		<verb>Scout</verb>
+		<naturalPriority>120</naturalPriority>
+		<alwaysStartActive>true</alwaysStartActive>
+		<workTags>
+		</workTags>
+	</WorkTypeDef>
+	
+</WorkTypeDefs>

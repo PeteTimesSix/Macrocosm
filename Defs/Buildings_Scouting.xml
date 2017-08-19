@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+  
+    <ThingDef ParentName="BuildingBase">
+    <defName>ScoutingHill</defName>
+    <label>scouting hill</label>
+    <thingClass>Macrocosm.macrocosm.buildings.Building_ScoutingLocationManned</thingClass>
+    <graphicData>
+      <texPath>hill</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+      <drawSize>(5,5)</drawSize>
+    </graphicData>
+    <tickerType>Rare</tickerType>
+    <constructEffect>ConstructDirt</constructEffect>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>Standable</passability>
+    <blockWind>true</blockWind>
+    <canOverlapZones>true</canOverlapZones>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <ScoutingTileRange>2</ScoutingTileRange>
+      <WorkToBuild>35000</WorkToBuild>
+    </statBases>
+    <description>Provides an elevated location from which to keep tabs on nearby regions. Takes a while to pile up.</description>
+    <size>(5,5)</size>
+    <interactionCellOffset>(0,0,0)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
+    <designationCategory>Scouting</designationCategory>
+	<building>
+		<ai_chillDestination>false</ai_chillDestination>
+		<isInert>true</isInert>
+		<allowAutoroof>false</allowAutoroof>
+	</building>      
+    <comps>
+      <li Class="Macrocosm.macrocosm.buildings.CompProperties_ScoutLocationManned">
+        <ticksCapacity>20000</ticksCapacity>
+        <ticksForJob>5000</ticksForJob>
+		<scoutingTimeTicks>3000</scoutingTimeTicks>
+		<allowsRoof>false</allowsRoof>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>SoutingTower</defName>
+    <label>scouting tower</label>
+    <thingClass>Macrocosm.macrocosm.buildings.Building_ScoutingLocationManned</thingClass>
+    <graphicData>
+      <texPath>scouttower</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+      <drawSize>(5,5)</drawSize>
+      <damageData>
+        <rect>(0,0,3,1.8)</rect>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <size>(3,5)</size>
+    <tickerType>Rare</tickerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Standable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <ScoutingTileRange>2</ScoutingTileRange>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>5000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>Provides an elevated location from which to keep tabs on nearby regions.</description>
+    <interactionCellOffset>(0,0,1)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Scouting</designationCategory>
+	<building>
+		<ai_chillDestination>false</ai_chillDestination>
+		<allowAutoroof>false</allowAutoroof>
+	</building>
+    <comps>
+      <li Class="Macrocosm.macrocosm.buildings.CompProperties_ScoutLocationManned">
+        <ticksCapacity>20000</ticksCapacity>
+        <ticksForJob>5000</ticksForJob>
+		<scoutingTimeTicks>3000</scoutingTimeTicks>
+		<allowsRoof>false</allowsRoof>
+      </li>
+    </comps>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+	<costList>
+		<WoodLog>350</WoodLog>
+    </costList>
+  </ThingDef>
+ 
+  <ThingDef ParentName="BuildingBase">
+    <defName>CameraNetConsole</defName>
+    <label>camera console</label>
+    <thingClass>Macrocosm.macrocosm.buildings.Building_ScoutingLocationManned</thingClass>
+    <graphicData>
+      <texPath>camconsole</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <rect>(0,0,3,1.8)</rect>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+	<size>(3,2)</size>
+    <interactionCellOffset>(0,0,2)</interactionCellOffset>
+    <tickerType>Rare</tickerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <ScoutingTileRange>3</ScoutingTileRange>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>Taps into the cameras of ancient devices and machinery, sensory systems of disabled or inert mechanoids and others in the nearby regions to create a vast security grid with minimal investment.</description>
+    <hasInteractionCell>true</hasInteractionCell>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Scouting</designationCategory>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>500</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="Macrocosm.macrocosm.buildings.CompProperties_ScoutLocationManned">
+        <ticksCapacity>25000</ticksCapacity>
+        <ticksForJob>3000</ticksForJob>
+		<scoutingTimeTicks>1000</scoutingTimeTicks>
+		<allowsRoof>true</allowsRoof>
+      </li>
+    </comps>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <researchPrerequisites>
+      <li>MicroelectronicsBasics</li>
+    </researchPrerequisites>
+	<costList>
+		<Steel>250</Steel>
+		<Component>6</Component>
+    </costList>
+  </ThingDef>
+ 
+   <ThingDef ParentName="BuildingBase">
+    <defName>CameraDroneConsole</defName>
+    <label>camera drone console</label>
+    <thingClass>Macrocosm.macrocosm.buildings.Building_ScoutingLocationManned</thingClass>
+    <graphicData>
+      <texPath>camdroneconsole</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <rect>(0,0,3,1.8)</rect>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+	<size>(3,3)</size>
+    <interactionCellOffset>(-1,0,2)</interactionCellOffset>
+    <tickerType>Rare</tickerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <ScoutingTileRange>4</ScoutingTileRange>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>2200</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>Generates and controls a swarm of C-4M micro-camera drones that scout the nearby regions.</description>
+    <hasInteractionCell>true</hasInteractionCell>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Scouting</designationCategory>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>500</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="Macrocosm.macrocosm.buildings.CompProperties_ScoutLocationManned">
+        <ticksCapacity>25000</ticksCapacity>
+        <ticksForJob>3000</ticksForJob>
+		<scoutingTimeTicks>1000</scoutingTimeTicks>
+		<allowsRoof>true</allowsRoof>
+      </li>
+    </comps>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <researchPrerequisites>
+      <li>Drones</li>
+    </researchPrerequisites>    
+	<costList>
+		<Steel>200</Steel>
+		<Plasteel>50</Plasteel>
+		<Component>8</Component>
+    </costList>
+  </ThingDef>
+  
+   <ThingDef ParentName="BuildingBase">
+    <defName>CameraDroneConsoleAutomatic</defName>
+    <label>automated C-4M system</label>
+    <thingClass>Macrocosm.macrocosm.buildings.Building_ScoutingLocationAutomatic</thingClass>
+    <graphicData>
+      <texPath>camdroneauto</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <rect>(0,0,3,1.8)</rect>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <tickerType>Rare</tickerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <ScoutingTileRange>4</ScoutingTileRange>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>2200</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>Generates and controls a swarm of C-4M micro-camera drones that scout the nearby regions. Does not require colonist intervention.</description>
+    <size>(3,3)</size>
+    <hasInteractionCell>false</hasInteractionCell>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Scouting</designationCategory>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>500</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="Macrocosm.macrocosm.buildings.CompProperties_ScoutLocationAutomatic">
+        <ticksCapacity>12000</ticksCapacity>
+      </li>
+    </comps>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <researchPrerequisites>
+      <li>Drones</li>
+      <li>Macrocontrollers</li>
+    </researchPrerequisites>
+	<costList>
+		<Steel>200</Steel>
+		<Plasteel>50</Plasteel>
+		<Component>8</Component>
+		<Macrocontroller>1</Macrocontroller>
+    </costList>
+  </ThingDef>
+  
+
+</Buildings>

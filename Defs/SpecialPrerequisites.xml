@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <Macrocosm.defs.SpecialPrerequisiteDef>
+    <defName>FarmingPeriodLong</defName>
+    <label>growing period of 30 days</label>
+	<forPawn>false</forPawn>
+  </Macrocosm.defs.SpecialPrerequisiteDef>
+  
+  <Macrocosm.defs.SpecialPrerequisiteDef>
+    <defName>FarmingPeriodShort</defName>
+    <label>growing period of 15 days</label>
+	<forPawn>false</forPawn>
+  </Macrocosm.defs.SpecialPrerequisiteDef>
+  
+  <Macrocosm.defs.SpecialPrerequisiteDef>
+    <defName>HuntingAnimals</defName>
+    <label>huntable animals</label>
+	<forPawn>false</forPawn>
+  </Macrocosm.defs.SpecialPrerequisiteDef>
+  
+  <Macrocosm.defs.SpecialPrerequisiteDef>
+    <defName>RangedWeapon</defName>
+    <label>ranged weapon</label>
+	<forPawn>true</forPawn>
+  </Macrocosm.defs.SpecialPrerequisiteDef>
+	
+</Defs>
