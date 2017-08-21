@@ -114,32 +114,44 @@ namespace Macrocosm.extensions
             if (this.IsHashIntervalTick(20))
             {
                 //NPCs are food-tax exempt for simplicity
-                if (!Faction.IsPlayer)
+                if (Faction == null || !Faction.IsPlayer)
                 {
-                    foreach (Pawn pawn in pawns)
+                    if (pawns != null)
                     {
-                        pawn.needs.food.ForceSetLevel(0.65f);
+                        foreach (Pawn pawn in pawns)
+                        {
+                            pawn.needs.food.ForceSetLevel(0.65f);
+                        }
                     }
                     if(decisionTicksLeft <= 0)
                     {
                         if (decisionTicksLeft <= 0 && this.arrived)
                         {
                             NPCaravanArrivalAction arrivalAction = CaravanGoalDecisionmaker.decide(this);
-                            this.pather.StartPath(arrivalAction.settlement.Tile, arrivalAction, true);
-                            this.arrived = false;
+                            if(arrivalAction != null && this.pather != null)
+                            {
+                                this.pather.StartPath(arrivalAction.settlement.Tile, arrivalAction, true);
+                                this.arrived = false;
+                            }
                         }
                     }
                     if (!Spotted)
                     {
-                        if (Macrocosm.saveData.ScoutingManager.IsScouted(this))
-                            GetSpotted(true);
+                        if (Macrocosm.saveData != null && Macrocosm.saveData.ScoutingManager != null)
+                        {
+                            if (Macrocosm.saveData.ScoutingManager.IsScouted(this))
+                                GetSpotted(true);
+                        }
                     }
                 }
             }
             if(startTicksLeft > 0)
             {
                 startTicksLeft--;
-                this.pather.nextTileCostLeft = this.pather.nextTileCostTotal;
+                if(pather != null)
+                {
+                    this.pather.nextTileCostLeft = this.pather.nextTileCostTotal;
+                }
             }
             if(decisionTicksLeft > 0)
             {
